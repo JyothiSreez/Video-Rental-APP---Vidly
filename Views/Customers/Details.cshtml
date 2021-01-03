@@ -1,0 +1,42 @@
+﻿@model Vidly1.ViewModels.DetailsCustomerViewModel
+
+
+
+@{
+    ViewBag.Title = "customers.Name";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+ @foreach (var customers in Model.Customers)
+    {
+
+
+        if (Model.Customers.Count > 0)
+        {
+
+               <h1>@customers.Name</h1>
+
+        }
+
+        else
+        {
+         <p>@customers</p>
+        }
+
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
